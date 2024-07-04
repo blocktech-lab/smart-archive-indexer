@@ -1,0 +1,361 @@
+# Copyright (C) 2024 Blocktech Lab
+msgid ""
+msgstr ""
+"Project-Id-Version: Smart Archive Indexer: Index Blocks for WordPress 3.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/smartarchiveindexer\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2023-12-21T08:05:53+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.7.1\n"
+"X-Domain: smartarchiveindexer\n"
+
+#. Plugin Name of the plugin
+msgid "Smart Archive Indexer: Index Blocks for WordPress"
+msgstr ""
+
+#. Description of the plugin
+msgid "Display indexes based on the dates (years, months, and days archives), authors, and taxonomy terms for quick navigation and filtering of posts."
+msgstr ""
+
+#. Author of the plugin
+msgid "Blocktech Lab"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://blocktech.dev"
+msgstr ""
+
+#. translators: 1. Author Name, 2. Number of Posts
+#: core/authors/Layouts.php:122
+#: core/authors/Layouts.php:130
+msgctxt "Author name and posts count"
+msgid "%1$s: %2$d Post"
+msgid_plural "%1$s: %2$d Posts"
+msgstr[0] ""
+msgstr[1] ""
+
+#: core/basic/Blocks.php:40
+msgid "Smart Archive Indexer"
+msgstr ""
+
+#. translators: 1. Year, 2. Number of Posts
+#: core/dates/Layouts.php:128
+msgctxt "Year and posts count"
+msgid "Year %1$s: %2$d Post"
+msgid_plural "Year %1$s: %2$d Posts"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1. Month, 2. Number of Posts
+#: core/dates/Layouts.php:150
+msgctxt "Month and posts count"
+msgid "%1$s: %2$d Post"
+msgid_plural "%1$s: %2$d Posts"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1. Date, 2. Number of Posts
+#: core/dates/Layouts.php:167
+msgctxt "Date and posts count"
+msgid "%1$s: %2$d Post"
+msgid_plural "%1$s: %2$d Posts"
+msgstr[0] ""
+msgstr[1] ""
+
+#: build/index.js:1
+#: src/blocks/authors/index.js:14
+#: src/blocks/dates/index.js:14
+#: src/blocks/terms/index.js:14
+msgid "Small"
+msgstr ""
+
+#: build/index.js:1
+#: src/blocks/authors/index.js:19
+#: src/blocks/dates/index.js:19
+#: src/blocks/terms/index.js:19
+msgid "Normal"
+msgstr ""
+
+#: build/index.js:1
+#: src/blocks/authors/index.js:24
+#: src/blocks/dates/index.js:24
+#: src/blocks/terms/index.js:24
+msgid "Big"
+msgstr ""
+
+#: build/index.js:1
+#: src/blocks/authors/index.js:39
+#: src/blocks/dates/index.js:39
+#: src/blocks/terms/index.js:39
+msgid "Display"
+msgstr ""
+
+#: build/index.js:1
+#: src/blocks/authors/index.js:41
+#: src/blocks/dates/index.js:41
+#: src/blocks/terms/index.js:41
+msgid "Layout"
+msgstr ""
+
+#: build/index.js:1
+#: src/blocks/authors/index.js:44
+#: src/blocks/dates/index.js:44
+#: src/blocks/terms/index.js:44
+msgid "Basic"
+msgstr ""
+
+#: build/index.js:1
+#: src/blocks/authors/index.js:45
+#: src/blocks/dates/index.js:45
+#: src/blocks/terms/index.js:45
+msgid "Compact"
+msgstr ""
+
+#: build/index.js:1
+#: src/blocks/authors/index.js:50
+#: src/blocks/terms/index.js:56
+msgid "Columns"
+msgstr ""
+
+#: build/index.js:1
+#: src/blocks/authors/index.js:63
+#: src/blocks/dates/index.js:68
+#: src/blocks/terms/index.js:69
+msgid "Data"
+msgstr ""
+
+#: build/index.js:1
+#: src/blocks/authors/index.js:65
+#: src/blocks/dates/index.js:70
+#: src/blocks/terms/index.js:71
+msgid "Post Type"
+msgstr ""
+
+#: build/index.js:1
+#: src/blocks/authors/index.js:71
+#: src/blocks/terms/index.js:77
+msgid "Order By"
+msgstr ""
+
+#: build/index.js:1
+#: src/blocks/authors/index.js:83
+#: src/blocks/dates/index.js:76
+#: src/blocks/terms/index.js:89
+msgid "Order"
+msgstr ""
+
+#: build/index.js:1
+#: src/blocks/authors/index.js:86
+#: src/blocks/dates/index.js:79
+#: src/blocks/terms/index.js:92
+msgid "Ascending"
+msgstr ""
+
+#: build/index.js:1
+#: src/blocks/authors/index.js:87
+#: src/blocks/dates/index.js:80
+#: src/blocks/terms/index.js:93
+msgid "Descending"
+msgstr ""
+
+#: build/index.js:1
+#: src/blocks/authors/index.js:92
+msgid "Author Avatar"
+msgstr ""
+
+#: build/index.js:1
+#: src/blocks/authors/index.js:94
+msgid "Show Author Avatar"
+msgstr ""
+
+#: build/index.js:1
+#: src/blocks/authors/index.js:99
+msgid "Avatar Size"
+msgstr ""
+
+#: build/index.js:1
+#: src/blocks/authors/index.js:112
+#: src/blocks/dates/index.js:85
+#: src/blocks/terms/index.js:98
+msgid "Posts Counts"
+msgstr ""
+
+#: build/index.js:1
+#: src/blocks/authors/index.js:114
+#: src/blocks/terms/index.js:100
+msgid "Show Counts"
+msgstr ""
+
+#: build/index.js:1
+#: src/blocks/authors/index.js:119
+#: src/blocks/dates/index.js:102
+#: src/blocks/terms/index.js:105
+msgid "Typography"
+msgstr ""
+
+#: build/index.js:1
+#: src/blocks/authors/index.js:121
+#: src/blocks/dates/index.js:104
+#: src/blocks/terms/index.js:107
+msgid "Font Size"
+msgstr ""
+
+#: build/index.js:1
+#: src/blocks/authors/index.js:128
+#: src/blocks/dates/index.js:111
+#: src/blocks/terms/index.js:114
+msgid "Line Height"
+msgstr ""
+
+#: build/index.js:1
+#: src/blocks/authors/index.js:133
+#: src/blocks/dates/index.js:116
+#: src/blocks/terms/index.js:119
+msgid "Colors"
+msgstr ""
+
+#: build/index.js:1
+#: src/blocks/authors/index.js:135
+#: src/blocks/terms/index.js:121
+msgid "Background"
+msgstr ""
+
+#: build/index.js:1
+#: src/blocks/authors/index.js:140
+#: src/blocks/terms/index.js:126
+msgid "Text"
+msgstr ""
+
+#: build/index.js:1
+#: src/blocks/authors/index.js:145
+#: src/blocks/dates/index.js:148
+#: src/blocks/terms/index.js:131
+msgid "Advanced"
+msgstr ""
+
+#: build/index.js:1
+#: src/blocks/authors/index.js:147
+#: src/blocks/dates/index.js:150
+#: src/blocks/terms/index.js:133
+msgid "Additional CSS Class"
+msgstr ""
+
+#: build/index.js:1
+#: src/blocks/dates/index.js:50
+msgid "Years"
+msgstr ""
+
+#: build/index.js:1
+#: src/blocks/dates/index.js:53
+msgid "Show"
+msgstr ""
+
+#: build/index.js:1
+#: src/blocks/dates/index.js:54
+msgid "Hide"
+msgstr ""
+
+#: build/index.js:1
+#: src/blocks/dates/index.js:59
+msgid "Months"
+msgstr ""
+
+#: build/index.js:1
+#: src/blocks/dates/index.js:62
+msgid "Auto"
+msgstr ""
+
+#: build/index.js:1
+#: src/blocks/dates/index.js:63
+msgid "Number only"
+msgstr ""
+
+#: build/index.js:1
+#: src/blocks/dates/index.js:87
+msgid "Show Year Counts"
+msgstr ""
+
+#: build/index.js:1
+#: src/blocks/dates/index.js:92
+msgid "Show Month Counts"
+msgstr ""
+
+#: build/index.js:1
+#: src/blocks/dates/index.js:97
+msgid "Show Day Counts"
+msgstr ""
+
+#: build/index.js:1
+#: src/blocks/dates/index.js:118
+msgid "Years Background"
+msgstr ""
+
+#: build/index.js:1
+#: src/blocks/dates/index.js:123
+msgid "Years Text"
+msgstr ""
+
+#: build/index.js:1
+#: src/blocks/dates/index.js:128
+msgid "Months Background"
+msgstr ""
+
+#: build/index.js:1
+#: src/blocks/dates/index.js:133
+msgid "Months Text"
+msgstr ""
+
+#: build/index.js:1
+#: src/blocks/dates/index.js:138
+msgid "Days Background"
+msgstr ""
+
+#: build/index.js:1
+#: src/blocks/dates/index.js:143
+msgid "Days Text"
+msgstr ""
+
+#: build/index.js:1
+#: src/blocks/terms/index.js:50
+msgid "Taxonomy"
+msgstr ""
+
+#: build/blocks/authors/block.json
+#: src/blocks/authors/block.json
+msgctxt "block title"
+msgid "Authors Archives"
+msgstr ""
+
+#: build/blocks/authors/block.json
+#: src/blocks/authors/block.json
+msgctxt "block description"
+msgid "Display authors archives index."
+msgstr ""
+
+#: build/blocks/dates/block.json
+#: src/blocks/dates/block.json
+msgctxt "block title"
+msgid "Dates Archives"
+msgstr ""
+
+#: build/blocks/dates/block.json
+#: src/blocks/dates/block.json
+msgctxt "block description"
+msgid "Display dates archives index."
+msgstr ""
+
+#: build/blocks/terms/block.json
+#: src/blocks/terms/block.json
+msgctxt "block title"
+msgid "Terms Archives"
+msgstr ""
+
+#: build/blocks/terms/block.json
+#: src/blocks/terms/block.json
+msgctxt "block description"
+msgid "Display taxonomy terms archives index."
+msgstr ""

@@ -1,0 +1,101 @@
+.smartarchiveindexer-terms-wrapper {
+    &.smartarchiveindexer-terms-layout-basic {
+        display: inline-flex;
+        flex-wrap: wrap;
+        width: calc(100% + 1em);
+        @include ltr {
+            margin: 0 0 0 -1em;
+        }
+        @include rtl {
+            margin: 0 -1em 0 0;
+        }
+
+        .smartarchiveindexer-terms-term {
+            @include ltr {
+                margin: 0 0 1em 1em;
+            }
+            @include rtl {
+                margin: 0 1em 1em 0;
+            }
+        }
+
+        &.smartarchiveindexer-terms-columns-1 {
+            .smartarchiveindexer-terms-term {
+                flex: 0 0 calc(100% - 1em);
+            }
+        }
+
+        &.smartarchiveindexer-terms-columns-2 {
+            .smartarchiveindexer-terms-term {
+                flex: 0 0 calc(50% - 1em);
+            }
+        }
+
+        &.smartarchiveindexer-terms-columns-3 {
+            .smartarchiveindexer-terms-term {
+                flex: 0 0 calc(33.3333% - 1em);
+            }
+        }
+
+        &.smartarchiveindexer-terms-columns-4 {
+            .smartarchiveindexer-terms-term {
+                flex: 0 0 calc(25% - 1em);
+            }
+        }
+
+        &.smartarchiveindexer-terms-columns-5 {
+            .smartarchiveindexer-terms-term {
+                flex: 0 0 calc(20% - 1em);
+            }
+        }
+
+        &.smartarchiveindexer-terms-columns-6 {
+            .smartarchiveindexer-terms-term {
+                flex: 0 0 calc(16.6666% - 1em);
+            }
+        }
+
+        &.smartarchiveindexer-terms-columns-3,
+        &.smartarchiveindexer-terms-columns-4,
+        &.smartarchiveindexer-terms-columns-5,
+        &.smartarchiveindexer-terms-columns-6 {
+            .smartarchiveindexer-terms-term {
+                @media screen and (max-width: #{$responsive-break-large}) {
+                    flex: 0 0 calc(50% - 1em);
+                }
+
+                @media screen and (max-width: #{$responsive-break-small}) {
+                    flex: 0 0 calc(100% - 1em);
+                }
+            }
+        }
+    }
+
+    &.smartarchiveindexer-terms-layout-compact {
+        display: inline-flex;
+        flex-wrap: wrap;
+
+        .smartarchiveindexer-terms-term {
+            @include ltr {
+                margin: 0 1em 1em 0;
+            }
+            @include rtl {
+                margin: 0 0 1em 1em;
+            }
+        }
+    }
+
+    &.smartarchiveindexer-terms-layout-compact,
+    &.smartarchiveindexer-terms-layout-basic {
+        .smartarchiveindexer-terms-term {
+            background: var(--smartarchiveindexer-terms-background);
+            color: var(--smartarchiveindexer-terms-color);
+            padding: .33em .66em;
+            font-weight: bold;
+
+            .link-name {
+                color: var(--smartarchiveindexer-terms-color);
+            }
+        }
+    }
+}

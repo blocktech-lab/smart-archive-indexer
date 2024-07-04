@@ -1,0 +1,263 @@
+:root {
+  --smartarchiveindexer-dates-font-size: 16px;
+  --smartarchiveindexer-dates-line-height: 1.5;
+  --smartarchiveindexer-dates-year-background: #111;
+  --smartarchiveindexer-dates-year-color: #FFF;
+  --smartarchiveindexer-dates-month-background: #444;
+  --smartarchiveindexer-dates-month-color: #FFF;
+  --smartarchiveindexer-dates-day-background: #777;
+  --smartarchiveindexer-dates-day-color: #FFF;
+  --smartarchiveindexer-authors-font-size: 16px;
+  --smartarchiveindexer-authors-line-height: 1.5;
+  --smartarchiveindexer-authors-background: #111;
+  --smartarchiveindexer-authors-color: #FFF;
+  --smartarchiveindexer-terms-font-size: 16px;
+  --smartarchiveindexer-terms-line-height: 1.5;
+  --smartarchiveindexer-terms-background: #111;
+  --smartarchiveindexer-terms-color: #FFF;
+}
+
+.smartarchiveindexer-wrapper * > {
+  box-sizing: border-box;
+}
+.smartarchiveindexer-wrapper .info-counts {
+  font-weight: 300;
+  float: right;
+  margin: 0 0 0 1em;
+}
+.smartarchiveindexer-wrapper .info-counts:before {
+  content: "(";
+}
+.smartarchiveindexer-wrapper .info-counts:after {
+  content: ")";
+}
+
+.smartarchiveindexer-dates-wrapper {
+  font-size: var(--smartarchiveindexer-dates-font-size);
+  line-height: var(--smartarchiveindexer-dates-line-height);
+}
+
+.smartarchiveindexer-authors-wrapper {
+  font-size: var(--smartarchiveindexer-authors-font-size);
+  line-height: var(--smartarchiveindexer-authors-line-height);
+}
+
+.smartarchiveindexer-terms-wrapper {
+  font-size: var(--smartarchiveindexer-terms-font-size);
+  line-height: var(--smartarchiveindexer-terms-line-height);
+}
+
+.smartarchiveindexer-dates-wrapper.smartarchiveindexer-dates-layout-basic .smartarchiveindexer-dates-year-wrapper .inner-year, .smartarchiveindexer-dates-wrapper.smartarchiveindexer-dates-layout-compact .smartarchiveindexer-dates-year-wrapper .inner-year {
+  background: var(--smartarchiveindexer-dates-year-background);
+  color: var(--smartarchiveindexer-dates-year-color);
+  padding: 0.33em 0.66em;
+  font-weight: bold;
+  display: inline-block;
+  min-width: 10em;
+  text-align: left;
+}
+.smartarchiveindexer-dates-wrapper.smartarchiveindexer-dates-layout-basic .smartarchiveindexer-dates-year-wrapper .inner-year a, .smartarchiveindexer-dates-wrapper.smartarchiveindexer-dates-layout-compact .smartarchiveindexer-dates-year-wrapper .inner-year a {
+  color: var(--smartarchiveindexer-dates-year-color);
+}
+.smartarchiveindexer-dates-wrapper.smartarchiveindexer-dates-layout-basic .smartarchiveindexer-dates-month-wrapper, .smartarchiveindexer-dates-wrapper.smartarchiveindexer-dates-layout-compact .smartarchiveindexer-dates-month-wrapper {
+  display: flex;
+}
+.smartarchiveindexer-dates-wrapper.smartarchiveindexer-dates-layout-basic .smartarchiveindexer-dates-month-wrapper .smartarchiveindexer-dates-month, .smartarchiveindexer-dates-wrapper.smartarchiveindexer-dates-layout-compact .smartarchiveindexer-dates-month-wrapper .smartarchiveindexer-dates-month {
+  margin: 0 1.66em 0 0;
+}
+.smartarchiveindexer-dates-wrapper.smartarchiveindexer-dates-layout-basic .smartarchiveindexer-dates-month-wrapper .inner-month, .smartarchiveindexer-dates-wrapper.smartarchiveindexer-dates-layout-compact .smartarchiveindexer-dates-month-wrapper .inner-month {
+  background: var(--smartarchiveindexer-dates-month-background);
+  color: var(--smartarchiveindexer-dates-month-color);
+  padding: 0.33em 0.66em;
+  font-weight: bold;
+  display: inline-block;
+  min-width: 15em;
+  text-align: left;
+}
+.smartarchiveindexer-dates-wrapper.smartarchiveindexer-dates-layout-basic .smartarchiveindexer-dates-month-wrapper .inner-month a, .smartarchiveindexer-dates-wrapper.smartarchiveindexer-dates-layout-compact .smartarchiveindexer-dates-month-wrapper .inner-month a {
+  color: var(--smartarchiveindexer-dates-month-color);
+}
+.smartarchiveindexer-dates-wrapper.smartarchiveindexer-dates-layout-basic .smartarchiveindexer-dates-month-wrapper .smartarchiveindexer-dates-days, .smartarchiveindexer-dates-wrapper.smartarchiveindexer-dates-layout-compact .smartarchiveindexer-dates-month-wrapper .smartarchiveindexer-dates-days {
+  padding: 0;
+}
+.smartarchiveindexer-dates-wrapper.smartarchiveindexer-dates-layout-basic .smartarchiveindexer-dates-day-wrapper, .smartarchiveindexer-dates-wrapper.smartarchiveindexer-dates-layout-compact .smartarchiveindexer-dates-day-wrapper {
+  display: inline-block;
+}
+.smartarchiveindexer-dates-wrapper.smartarchiveindexer-dates-layout-basic .smartarchiveindexer-dates-day-wrapper .inner-day, .smartarchiveindexer-dates-wrapper.smartarchiveindexer-dates-layout-compact .smartarchiveindexer-dates-day-wrapper .inner-day {
+  background: var(--smartarchiveindexer-dates-day-background);
+  color: var(--smartarchiveindexer-dates-day-color);
+  padding: 0.33em 0.66em;
+  font-weight: bold;
+  display: inline-block;
+  min-width: 2.5em;
+  text-align: center;
+  margin: 0 0.66em 0.66em 0;
+}
+.smartarchiveindexer-dates-wrapper.smartarchiveindexer-dates-layout-basic .smartarchiveindexer-dates-day-wrapper .inner-day a, .smartarchiveindexer-dates-wrapper.smartarchiveindexer-dates-layout-compact .smartarchiveindexer-dates-day-wrapper .inner-day a {
+  color: var(--smartarchiveindexer-dates-day-color);
+}
+@media screen and (max-width: 640px) {
+  .smartarchiveindexer-dates-wrapper.smartarchiveindexer-dates-layout-basic .smartarchiveindexer-dates-month-wrapper, .smartarchiveindexer-dates-wrapper.smartarchiveindexer-dates-layout-compact .smartarchiveindexer-dates-month-wrapper {
+    display: block;
+  }
+  .smartarchiveindexer-dates-wrapper.smartarchiveindexer-dates-layout-basic .smartarchiveindexer-dates-month-wrapper .smartarchiveindexer-dates-days, .smartarchiveindexer-dates-wrapper.smartarchiveindexer-dates-layout-compact .smartarchiveindexer-dates-month-wrapper .smartarchiveindexer-dates-days {
+    padding: 0.66em 0 0;
+  }
+}
+.smartarchiveindexer-dates-wrapper.smartarchiveindexer-dates-layout-basic .smartarchiveindexer-dates-year-wrapper {
+  display: flex;
+}
+.smartarchiveindexer-dates-wrapper.smartarchiveindexer-dates-layout-basic .smartarchiveindexer-dates-year-wrapper .smartarchiveindexer-dates-year {
+  margin: 0 1.66em 0 0;
+}
+.smartarchiveindexer-dates-wrapper.smartarchiveindexer-dates-layout-basic .smartarchiveindexer-dates-year-wrapper .smartarchiveindexer-dates-months {
+  padding: 0 0 1em;
+}
+@media screen and (max-width: 800px) {
+  .smartarchiveindexer-dates-wrapper.smartarchiveindexer-dates-layout-basic .smartarchiveindexer-dates-year-wrapper {
+    display: block;
+  }
+  .smartarchiveindexer-dates-wrapper.smartarchiveindexer-dates-layout-basic .smartarchiveindexer-dates-year-wrapper .smartarchiveindexer-dates-year .link-year {
+    width: 50%;
+  }
+  .smartarchiveindexer-dates-wrapper.smartarchiveindexer-dates-layout-basic .smartarchiveindexer-dates-year-wrapper .smartarchiveindexer-dates-months {
+    padding: 1em 0;
+  }
+}
+@media screen and (max-width: 640px) {
+  .smartarchiveindexer-dates-wrapper.smartarchiveindexer-dates-layout-basic .smartarchiveindexer-dates-year-wrapper .smartarchiveindexer-dates-year .inner-year {
+    width: 100%;
+  }
+}
+.smartarchiveindexer-dates-wrapper.smartarchiveindexer-dates-layout-compact .smartarchiveindexer-dates-year-wrapper .smartarchiveindexer-dates-year .inner-year {
+  width: 100%;
+  max-width: 30em;
+}
+.smartarchiveindexer-dates-wrapper.smartarchiveindexer-dates-layout-compact .smartarchiveindexer-dates-year-wrapper .smartarchiveindexer-dates-months {
+  padding: 1em 0;
+}
+@media screen and (max-width: 640px) {
+  .smartarchiveindexer-dates-wrapper.smartarchiveindexer-dates-layout-compact .smartarchiveindexer-dates-year-wrapper .smartarchiveindexer-dates-year .inner-year {
+    max-width: 100%;
+  }
+}
+
+.smartarchiveindexer-authors-wrapper.smartarchiveindexer-authors-layout-basic {
+  display: inline-flex;
+  flex-wrap: wrap;
+  width: calc(100% + 1em);
+  margin: 0 0 0 -1em;
+}
+.smartarchiveindexer-authors-wrapper.smartarchiveindexer-authors-layout-basic .smartarchiveindexer-authors-author {
+  margin: 0 0 1em 1em;
+}
+.smartarchiveindexer-authors-wrapper.smartarchiveindexer-authors-layout-basic .smartarchiveindexer-authors-author.has-avatar .link-name {
+  display: block;
+  margin-left: 2em;
+}
+.smartarchiveindexer-authors-wrapper.smartarchiveindexer-authors-layout-basic.smartarchiveindexer-authors-columns-1 .smartarchiveindexer-authors-author {
+  flex: 0 0 calc(100% - 1em);
+}
+.smartarchiveindexer-authors-wrapper.smartarchiveindexer-authors-layout-basic.smartarchiveindexer-authors-columns-2 .smartarchiveindexer-authors-author {
+  flex: 0 0 calc(50% - 1em);
+}
+.smartarchiveindexer-authors-wrapper.smartarchiveindexer-authors-layout-basic.smartarchiveindexer-authors-columns-3 .smartarchiveindexer-authors-author {
+  flex: 0 0 calc(33.3333% - 1em);
+}
+.smartarchiveindexer-authors-wrapper.smartarchiveindexer-authors-layout-basic.smartarchiveindexer-authors-columns-4 .smartarchiveindexer-authors-author {
+  flex: 0 0 calc(25% - 1em);
+}
+.smartarchiveindexer-authors-wrapper.smartarchiveindexer-authors-layout-basic.smartarchiveindexer-authors-columns-5 .smartarchiveindexer-authors-author {
+  flex: 0 0 calc(20% - 1em);
+}
+.smartarchiveindexer-authors-wrapper.smartarchiveindexer-authors-layout-basic.smartarchiveindexer-authors-columns-6 .smartarchiveindexer-authors-author {
+  flex: 0 0 calc(16.6666% - 1em);
+}
+@media screen and (max-width: 960px) {
+  .smartarchiveindexer-authors-wrapper.smartarchiveindexer-authors-layout-basic.smartarchiveindexer-authors-columns-3 .smartarchiveindexer-authors-author, .smartarchiveindexer-authors-wrapper.smartarchiveindexer-authors-layout-basic.smartarchiveindexer-authors-columns-4 .smartarchiveindexer-authors-author, .smartarchiveindexer-authors-wrapper.smartarchiveindexer-authors-layout-basic.smartarchiveindexer-authors-columns-5 .smartarchiveindexer-authors-author, .smartarchiveindexer-authors-wrapper.smartarchiveindexer-authors-layout-basic.smartarchiveindexer-authors-columns-6 .smartarchiveindexer-authors-author {
+    flex: 0 0 calc(50% - 1em);
+  }
+}
+@media screen and (max-width: 640px) {
+  .smartarchiveindexer-authors-wrapper.smartarchiveindexer-authors-layout-basic.smartarchiveindexer-authors-columns-3 .smartarchiveindexer-authors-author, .smartarchiveindexer-authors-wrapper.smartarchiveindexer-authors-layout-basic.smartarchiveindexer-authors-columns-4 .smartarchiveindexer-authors-author, .smartarchiveindexer-authors-wrapper.smartarchiveindexer-authors-layout-basic.smartarchiveindexer-authors-columns-5 .smartarchiveindexer-authors-author, .smartarchiveindexer-authors-wrapper.smartarchiveindexer-authors-layout-basic.smartarchiveindexer-authors-columns-6 .smartarchiveindexer-authors-author {
+    flex: 0 0 calc(100% - 1em);
+  }
+}
+.smartarchiveindexer-authors-wrapper.smartarchiveindexer-authors-layout-compact {
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+.smartarchiveindexer-authors-wrapper.smartarchiveindexer-authors-layout-compact .smartarchiveindexer-authors-author {
+  margin: 0 1em 1em 0;
+}
+.smartarchiveindexer-authors-wrapper.smartarchiveindexer-authors-layout-compact .smartarchiveindexer-authors-author, .smartarchiveindexer-authors-wrapper.smartarchiveindexer-authors-layout-basic .smartarchiveindexer-authors-author {
+  background: var(--smartarchiveindexer-authors-background);
+  color: var(--smartarchiveindexer-authors-color);
+  padding: 0.66em;
+  font-weight: bold;
+}
+.smartarchiveindexer-authors-wrapper.smartarchiveindexer-authors-layout-compact .smartarchiveindexer-authors-author .link-avatar, .smartarchiveindexer-authors-wrapper.smartarchiveindexer-authors-layout-basic .smartarchiveindexer-authors-author .link-avatar {
+  display: block;
+  float: left;
+  margin: 0 0.66em 0 0;
+}
+.smartarchiveindexer-authors-wrapper.smartarchiveindexer-authors-layout-compact .smartarchiveindexer-authors-author .link-avatar img, .smartarchiveindexer-authors-wrapper.smartarchiveindexer-authors-layout-basic .smartarchiveindexer-authors-author .link-avatar img {
+  display: block;
+}
+.smartarchiveindexer-authors-wrapper.smartarchiveindexer-authors-layout-compact .smartarchiveindexer-authors-author .link-name, .smartarchiveindexer-authors-wrapper.smartarchiveindexer-authors-layout-basic .smartarchiveindexer-authors-author .link-name {
+  color: var(--smartarchiveindexer-authors-color);
+}
+
+.smartarchiveindexer-terms-wrapper.smartarchiveindexer-terms-layout-basic {
+  display: inline-flex;
+  flex-wrap: wrap;
+  width: calc(100% + 1em);
+  margin: 0 0 0 -1em;
+}
+.smartarchiveindexer-terms-wrapper.smartarchiveindexer-terms-layout-basic .smartarchiveindexer-terms-term {
+  margin: 0 0 1em 1em;
+}
+.smartarchiveindexer-terms-wrapper.smartarchiveindexer-terms-layout-basic.smartarchiveindexer-terms-columns-1 .smartarchiveindexer-terms-term {
+  flex: 0 0 calc(100% - 1em);
+}
+.smartarchiveindexer-terms-wrapper.smartarchiveindexer-terms-layout-basic.smartarchiveindexer-terms-columns-2 .smartarchiveindexer-terms-term {
+  flex: 0 0 calc(50% - 1em);
+}
+.smartarchiveindexer-terms-wrapper.smartarchiveindexer-terms-layout-basic.smartarchiveindexer-terms-columns-3 .smartarchiveindexer-terms-term {
+  flex: 0 0 calc(33.3333% - 1em);
+}
+.smartarchiveindexer-terms-wrapper.smartarchiveindexer-terms-layout-basic.smartarchiveindexer-terms-columns-4 .smartarchiveindexer-terms-term {
+  flex: 0 0 calc(25% - 1em);
+}
+.smartarchiveindexer-terms-wrapper.smartarchiveindexer-terms-layout-basic.smartarchiveindexer-terms-columns-5 .smartarchiveindexer-terms-term {
+  flex: 0 0 calc(20% - 1em);
+}
+.smartarchiveindexer-terms-wrapper.smartarchiveindexer-terms-layout-basic.smartarchiveindexer-terms-columns-6 .smartarchiveindexer-terms-term {
+  flex: 0 0 calc(16.6666% - 1em);
+}
+@media screen and (max-width: 960px) {
+  .smartarchiveindexer-terms-wrapper.smartarchiveindexer-terms-layout-basic.smartarchiveindexer-terms-columns-3 .smartarchiveindexer-terms-term, .smartarchiveindexer-terms-wrapper.smartarchiveindexer-terms-layout-basic.smartarchiveindexer-terms-columns-4 .smartarchiveindexer-terms-term, .smartarchiveindexer-terms-wrapper.smartarchiveindexer-terms-layout-basic.smartarchiveindexer-terms-columns-5 .smartarchiveindexer-terms-term, .smartarchiveindexer-terms-wrapper.smartarchiveindexer-terms-layout-basic.smartarchiveindexer-terms-columns-6 .smartarchiveindexer-terms-term {
+    flex: 0 0 calc(50% - 1em);
+  }
+}
+@media screen and (max-width: 640px) {
+  .smartarchiveindexer-terms-wrapper.smartarchiveindexer-terms-layout-basic.smartarchiveindexer-terms-columns-3 .smartarchiveindexer-terms-term, .smartarchiveindexer-terms-wrapper.smartarchiveindexer-terms-layout-basic.smartarchiveindexer-terms-columns-4 .smartarchiveindexer-terms-term, .smartarchiveindexer-terms-wrapper.smartarchiveindexer-terms-layout-basic.smartarchiveindexer-terms-columns-5 .smartarchiveindexer-terms-term, .smartarchiveindexer-terms-wrapper.smartarchiveindexer-terms-layout-basic.smartarchiveindexer-terms-columns-6 .smartarchiveindexer-terms-term {
+    flex: 0 0 calc(100% - 1em);
+  }
+}
+.smartarchiveindexer-terms-wrapper.smartarchiveindexer-terms-layout-compact {
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+.smartarchiveindexer-terms-wrapper.smartarchiveindexer-terms-layout-compact .smartarchiveindexer-terms-term {
+  margin: 0 1em 1em 0;
+}
+.smartarchiveindexer-terms-wrapper.smartarchiveindexer-terms-layout-compact .smartarchiveindexer-terms-term, .smartarchiveindexer-terms-wrapper.smartarchiveindexer-terms-layout-basic .smartarchiveindexer-terms-term {
+  background: var(--smartarchiveindexer-terms-background);
+  color: var(--smartarchiveindexer-terms-color);
+  padding: 0.33em 0.66em;
+  font-weight: bold;
+}
+.smartarchiveindexer-terms-wrapper.smartarchiveindexer-terms-layout-compact .smartarchiveindexer-terms-term .link-name, .smartarchiveindexer-terms-wrapper.smartarchiveindexer-terms-layout-basic .smartarchiveindexer-terms-term .link-name {
+  color: var(--smartarchiveindexer-terms-color);
+}

@@ -1,0 +1,41 @@
+.smartarchiveindexer-wrapper {
+
+    * > {
+        box-sizing: border-box;
+    }
+
+    .info-counts {
+        font-weight: 300;
+        @include ltr {
+            float: right;
+            margin: 0 0 0 1em;
+        }
+        @include rtl {
+            float: left;
+            margin: 0 1em 0 0;
+        }
+
+        &:before {
+            content: "(";
+        }
+
+        &:after {
+            content: ")";
+        }
+    }
+}
+
+.smartarchiveindexer-dates-wrapper {
+    font-size: var(--smartarchiveindexer-dates-font-size);
+    line-height: var(--smartarchiveindexer-dates-line-height);
+}
+
+.smartarchiveindexer-authors-wrapper {
+    font-size: var(--smartarchiveindexer-authors-font-size);
+    line-height: var(--smartarchiveindexer-authors-line-height);
+}
+
+.smartarchiveindexer-terms-wrapper {
+    font-size: var(--smartarchiveindexer-terms-font-size);
+    line-height: var(--smartarchiveindexer-terms-line-height);
+}

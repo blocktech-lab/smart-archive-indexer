@@ -1,0 +1,20 @@
+:root {
+    --smartarchiveindexer-dates-font-size: #{$dates-font-size};
+    --smartarchiveindexer-dates-line-height: #{$dates-line-height};
+    --smartarchiveindexer-dates-year-background: #{$dates-year-background};
+    --smartarchiveindexer-dates-year-color: #{$dates-year-color};
+    --smartarchiveindexer-dates-month-background: #{$dates-month-background};
+    --smartarchiveindexer-dates-month-color: #{$dates-month-color};
+    --smartarchiveindexer-dates-day-background: #{$dates-day-background};
+    --smartarchiveindexer-dates-day-color: #{$dates-day-color};
+
+    --smartarchiveindexer-authors-font-size: #{$authors-font-size};
+    --smartarchiveindexer-authors-line-height: #{$authors-line-height};
+    --smartarchiveindexer-authors-background: #{$authors-background};
+    --smartarchiveindexer-authors-color: #{$authors-color};
+
+    --smartarchiveindexer-terms-font-size: #{$terms-font-size};
+    --smartarchiveindexer-terms-line-height: #{$terms-line-height};
+    --smartarchiveindexer-terms-background: #{$terms-background};
+    --smartarchiveindexer-terms-color: #{$terms-color};
+}
